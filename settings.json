@@ -1,0 +1,120 @@
+{
+    // ───── Editor & Appearance ─────
+    "editor.fontSize": 20,
+    "editor.lineNumbers": "on",
+    "editor.guides.indentation": false,
+    "editor.minimap.enabled": false,
+    "editor.lightbulb.enabled": "off",
+    "editor.stickyScroll.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderLineHighlight": "none",
+    "editor.scrollBeyondLastLine": false,
+    "workbench.statusBar.visible": false,
+    "workbench.editor.showTabs": "single",
+    "window.titleBarStyle": "custom",
+    "window.title": "${activeEditorShort}",
+    
+    "workbench.colorTheme": "Monospace Dark",
+
+    // ───── Navigation ─────
+    "explorer.confirmDragAndDrop": false,
+    "explorer.decorations.badges": false,
+    "git.decorations.enabled": false,
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+
+    // ───── Terminal ─────
+    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.defaultProfile.windows": "bash (MSYS2)",
+
+    // ───── Code Runner ─────
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "python": "python",
+        "go": "go run",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt"
+        // Add any other languages you need
+    },
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": true,
+
+    // ───── Security & Misc ─────
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // ───── Custom CSS (Optional) ─────
+    "vscode_custom_css.imports": [
+        "D:/Web Developement/custom-vscode.css"
+    ],
+    "workbench.activityBar.location": "hidden", // make this "default" later
+    "window.customTitleBarVisibility": "windowed",
+    "window.menuBarVisibility": "compact",
+    "chat.commandCenter.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontWeight": "normal",
+
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#8581b6",
+        "editor.selectionBackground": "#120349",
+        "editor.foreground": "#BCBEC8",
+        "scrollbarSlider.background": "#2e303b",
+        "scrollbarSlider.hoverBackground": "#404145",
+        "scrollbarSlider.activeBackground": "#686363",
+        "sideBar.background" : "#1b1d21",
+        "sideBar.border" : "#3e3d43",
+    },
+
+        "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "string",
+                "settings": {
+                    "foreground": "#8EE9B6"
+                }
+            }
+        ]
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    "php.validate.executablePath": "",
+    "makefile.configureOnOpen": true,
+    "workbench.editor.empty.hint": "hidden",
+    "git.openRepositoryInParentFolders": "never",
+    "python.createEnvironment.trigger": "off",
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+    "C_Cpp.default.compileCommands": [
+        ""
+    ],
+    "editor.experimentalWhitespaceRendering": "off",
+    "editor.autoClosingComments": "never",
+    "editor.tabCompletion": "on",
+    "Lua.diagnostics.enable": false,
+    "markdown-preview-enhanced.previewTheme": "vscode.css",
+    "markdown-preview-enhanced.codeBlockTheme": "vscode.css",
+    "terminal.integrated.initialHint": false,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+    "update.showReleaseNotes": false
+
+}
